@@ -1,17 +1,65 @@
 {
   "autores": [
-    { "id": 1, "nombre": "Gabriel García Márquez", "nacionalidad": "Colombiana" },
-    { "id": 2, "nombre": "Jane Austen", "nacionalidad": "Británica" },
-    { "id": 3, "nombre": "George Orwell", "nacionalidad": "Británica" }
+    {
+      "id": 1,
+      "nombre": "Gabriel García Márquez",
+      "nacionalidad": "Colombiana"
+    },
+    {
+      "id": 2,
+      "nombre": "Jane Austen",
+      "nacionalidad": "Británica"
+    },
+    {
+      "id": 3,
+      "nombre": "George Orwell",
+      "nacionalidad": "Británica"
+    },
+    {
+      "nombre": "Robert Kirchubel",
+      "nacionalidad": "Aleman",
+      "id": 4
+    }
   ],
   "categorias": [
-    { "id": 1, "nombre": "Novela" },
-    { "id": 2, "nombre": "Ciencia ficción" },
-    { "id": 3, "nombre": "Clásico" }
+    {
+      "id": 1,
+      "nombre": "Novela"
+    },
+    {
+      "id": 2,
+      "nombre": "Ciencia ficción"
+    },
+    {
+      "id": 3,
+      "nombre": "Clásico"
+    },
+    {
+      "nombre": "Historia",
+      "id": 4
+    }
   ],
   "libros": [
-    { "id": 1, "titulo": "Cien años de soledad", "anio": 1967, "autorId": 1, "categoriaId": 1 },
-    { "id": 2, "titulo": "Orgullo y prejuicio", "anio": 1813, "autorId": 2, "categoriaId": 3 },
-    { "id": 3, "titulo": "1984", "anio": 1949, "autorId": 3, "categoriaId": 2 }
+    {
+      "id": 1,
+      "titulo": "Cien años de soledad",
+      "anio": 1967,
+      "autorId": 1,
+      "categoriaId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Orgullo y prejuicio",
+      "anio": 1813,
+      "autorId": 2,
+      "categoriaId": 3
+    },
+    {
+      "id": 3,
+      "titulo": "1984",
+      "anio": 1949,
+      "autorId": 3,
+      "categoriaId": 2
+    }
   ]
 }
