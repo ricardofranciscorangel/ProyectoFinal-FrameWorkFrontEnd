@@ -5,7 +5,8 @@
 
     <main>
       <!-- Según la vista elegida, muestro una página u otra -->
-      <LibrosView v-if="vista === 'libros'" />
+      <InicioView v-if="vista === 'inicio'" />
+      <LibrosView v-else-if="vista === 'libros'" />
       <AutoresView v-else-if="vista === 'autores'" />
       <CategoriasView v-else-if="vista === 'categorias'" />
     </main>
@@ -14,6 +15,7 @@
 
 <script>
 import NavBar from './components/NavBar.vue'
+import InicioView from './views/InicioView.vue'
 import LibrosView from './views/LibrosView.vue'
 import AutoresView from './views/AutoresView.vue'
 import CategoriasView from './views/CategoriasView.vue'
@@ -22,13 +24,14 @@ export default {
   name: 'App',
   components: {
     NavBar,
+    InicioView,
     LibrosView,
     AutoresView,
     CategoriasView
   },
   data() {
     return {
-      vista: 'libros' // página que se muestra al inicio
+      vista: 'inicio' // página que se muestra al inicio
     }
   },
   methods: {

@@ -1,8 +1,14 @@
 <template>
   <nav class="navbar">
-    <span class="logo">📚 Biblioteca</span>
+    <span class="logo">Biblioteca</span>
     <div class="links">
       <!-- :class dinámico: pone la clase "activo" solo en el botón de la vista actual -->
+      <button
+        :class="{ activo: vistaActual === 'inicio' }"
+        @click="$emit('cambiar', 'inicio')"
+      >
+        Inicio
+      </button>
       <button
         :class="{ activo: vistaActual === 'libros' }"
         @click="$emit('cambiar', 'libros')"

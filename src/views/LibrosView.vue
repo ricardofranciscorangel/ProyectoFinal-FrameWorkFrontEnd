@@ -1,7 +1,7 @@
 <template>
   <div class="contenedor">
     <header class="encabezado">
-      <h1>📚 Libros</h1>
+      <h1>Libros</h1>
       <p class="subtitulo">Gestiona tu colección de libros</p>
     </header>
 
@@ -20,7 +20,7 @@
         class="buscador"
         v-model="busqueda"
         type="text"
-        placeholder="🔍 Buscar por título..."
+        placeholder="Buscar por título..."
       />
       <span class="contador">{{ librosFiltrados.length }} libro(s)</span>
     </div>
@@ -55,7 +55,7 @@
       </tbody>
     </table>
 
-    <p v-else class="mensaje-vacio">📭 No se encontraron libros.</p>
+    <p v-else class="mensaje-vacio">No se encontraron libros.</p>
   </div>
 </template>
 

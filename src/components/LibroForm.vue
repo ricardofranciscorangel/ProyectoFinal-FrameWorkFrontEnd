@@ -1,7 +1,7 @@
 <template>
   <form class="formulario" @submit.prevent="enviar">
     <!-- El título cambia según si estoy creando o editando -->
-    <h2>{{ id ? '✏️ Editar libro' : '➕ Agregar libro' }}</h2>
+    <h2>{{ id ? 'Editar libro' : 'Agregar libro' }}</h2>
 
     <!-- v-model = binding de doble vía -->
     <input v-model="titulo" type="text" placeholder="Título del libro" required />
@@ -9,7 +9,7 @@
 
     <!-- SELECT de autores: recorro la lista de autores que me pasó el padre -->
     <select v-model="autorId" required>
-      <option value="" disabled>Selecciona un autor</option>
+      <option value="" disabled>Selec. Autor</option>
       <option v-for="autor in autores" :key="autor.id" :value="autor.id">
         {{ autor.nombre }}
       </option>
@@ -17,7 +17,7 @@
 
     <!-- SELECT de categorías -->
     <select v-model="categoriaId" required>
-      <option value="" disabled>Selecciona una categoría</option>
+      <option value="" disabled>Selec. Categoría</option>
       <option v-for="cat in categorias" :key="cat.id" :value="cat.id">
         {{ cat.nombre }}
       </option>

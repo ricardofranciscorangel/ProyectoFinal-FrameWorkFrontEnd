@@ -3,22 +3,44 @@
     {
       "id": 1,
       "nombre": "Gabriel García Márquez",
-      "nacionalidad": "Colombiana"
+      "nacionalidad": "Colombiana",
+      "anioNacimiento": 1927
     },
     {
       "id": 2,
       "nombre": "Jane Austen",
-      "nacionalidad": "Británica"
+      "nacionalidad": "Británica",
+      "anioNacimiento": 1775
     },
     {
       "id": 3,
       "nombre": "George Orwell",
-      "nacionalidad": "Británica"
+      "nacionalidad": "Británica",
+      "anioNacimiento": 1903
     },
     {
+      "id": 4,
       "nombre": "Robert Kirchubel",
       "nacionalidad": "Aleman",
-      "id": 4
+      "anioNacimiento": 1952
+    },
+    {
+      "id": 5,
+      "nombre": "Javier Santoalalla",
+      "nacionalidad": "Español",
+      "anioNacimiento": 1995
+    },
+    {
+      "id": 6,
+      "nombre": "Wladston Ferreira Filho",
+      "nacionalidad": "Estado Unidense",
+      "anioNacimiento": 1992
+    },
+    {
+      "id": 7,
+      "nombre": "Panini",
+      "nacionalidad": "Italia",
+      "anioNacimiento": 0
     }
   ],
   "categorias": [
@@ -37,6 +59,18 @@
     {
       "nombre": "Historia",
       "id": 4
+    },
+    {
+      "id": 5,
+      "nombre": "Divulgación cientifica"
+    },
+    {
+      "id": 6,
+      "nombre": "Tecnologia"
+    },
+    {
+      "id": 7,
+      "nombre": "Album"
     }
   ],
   "libros": [
@@ -60,6 +94,34 @@
       "anio": 1949,
       "autorId": 3,
       "categoriaId": 2
+    },
+    {
+      "id": 4,
+      "titulo": "Operación Barbarroja 1",
+      "anio": 2003,
+      "autorId": 4,
+      "categoriaId": 4
+    },
+    {
+      "id": 5,
+      "titulo": "El boson de Higgs",
+      "anio": 2016,
+      "autorId": 5,
+      "categoriaId": 5
+    },
+    {
+      "id": 6,
+      "titulo": "Computer Science",
+      "anio": 2018,
+      "autorId": 6,
+      "categoriaId": 6
+    },
+    {
+      "id": 7,
+      "titulo": "Album Mundial 2026",
+      "anio": 2026,
+      "autorId": 7,
+      "categoriaId": 7
     }
   ]
 }

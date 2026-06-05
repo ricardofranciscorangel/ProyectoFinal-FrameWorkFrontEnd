@@ -1,24 +1,49 @@
 <template>
   <form class="mini-form" @submit.prevent="enviar">
     <input v-model="nombre" type="text" placeholder="Nombre de la categoría" required />
-    <button type="submit">Agregar</button>
+    <button type="submit">{{ id ? 'Actualizar' : 'Agregar' }}</button>
+    <button v-if="id" type="button" class="cancelar" @click="cancelar">Cancelar</button>
   </form>
 </template>
 
 <script>
 export default {
   name: 'CategoriaForm',
+  // PROP: el padre me manda la categoría a editar (o null si es nueva)
+  props: {
+    categoriaEditar: {
+      type: Object,
+      default: null
+    }
+  },
   data() {
     return {
+      id: null,
       nombre: ''
+    }
+  },
+  watch: {
+    categoriaEditar(nuevo) {
+      if (nuevo) {
+        this.id = nuevo.id
+        this.nombre = nuevo.nombre
+      }
     }
   },
   methods: {
     enviar() {
-      // Aviso al padre con la categoría nueva
       this.$emit('guardar', {
+        id: this.id,
         nombre: this.nombre
       })
+      this.limpiar()
+    },
+    cancelar() {
+      this.$emit('cancelar')
+      this.limpiar()
+    },
+    limpiar() {
+      this.id = null
       this.nombre = ''
     }
   }
@@ -55,5 +80,11 @@ export default {
 }
 .mini-form button:hover {
   background: #369870;
+}
+.mini-form button.cancelar {
+  background: #95a5a6;
+}
+.mini-form button.cancelar:hover {
+  background: #7f8c8d;
 }
 </style>
