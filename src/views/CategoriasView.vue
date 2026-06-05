@@ -19,7 +19,7 @@
         <span>{{ cat.nombre }}</span>
         <span class="acciones-lista">
           <button class="editar" @click="seleccionarCategoria(cat)">Editar</button>
-          <button class="mini-borrar" @click="borrarCategoria(cat.id)">✕</button>
+          <button class="borrar" @click="borrarCategoria(cat.id)">Borrar</button>
         </span>
       </li>
     </ul>

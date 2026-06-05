@@ -24,7 +24,7 @@
         </span>
         <span class="acciones-lista">
           <button class="editar" @click="seleccionarAutor(autor)">Editar</button>
-          <button class="mini-borrar" @click="borrarAutor(autor.id)">✕</button>
+          <button class="borrar" @click="borrarAutor(autor.id)">Borrar</button>
         </span>
       </li>
     </ul>

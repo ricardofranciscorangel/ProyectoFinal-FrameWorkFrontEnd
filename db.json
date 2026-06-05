@@ -41,6 +41,12 @@
       "nombre": "Panini",
       "nacionalidad": "Italia",
       "anioNacimiento": 0
+    },
+    {
+      "id": 8,
+      "nombre": "Francisco Sanchez",
+      "nacionalidad": "Mexicana",
+      "anioNacimiento": 2000
     }
   ],
   "categorias": [
@@ -122,6 +128,13 @@
       "anio": 2026,
       "autorId": 7,
       "categoriaId": 7
+    },
+    {
+      "id": 8,
+      "titulo": "Second Fall",
+      "anio": 2022,
+      "autorId": 8,
+      "categoriaId": 2
     }
   ]
 }
